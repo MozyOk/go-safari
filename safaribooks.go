@@ -42,7 +42,7 @@ func main() {
 	}
 	client := http.Client{Jar: jar}
 	resp, err := client.PostForm("https://www.safaribooksonline.com/accounts/login/", url.Values{
-		"csrfmiddlewaretoken": {"nQDuBWVRxWBMEbP7DpTUnLG15j9n83VN"},
+		"csrfmiddlewaretoken": {""},
 		"password":            {os.Getenv("PASSWORD")},
 		"email":               {os.Getenv("EMAIL")},
 		"user-agent":          {"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"},
